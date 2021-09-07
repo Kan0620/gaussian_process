@@ -21,7 +21,7 @@ def kernel(data_x, data_x_prime, kernel_mode, theta1 = 1.0, theta2 = 1.0):
         
         return np.exp(theta1 * np.cos(np.sqrt(r) / theta2))
     
-def sample_1d(min_x = -5, max_x = 5, n = 101):
+def sample_1d(min_x = -5., max_x = 5., n = 101):
     
     x_domain = np.linspace(min_x, max_x, n)
     fig = plt.figure(figsize = (8, 16))
